@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,8 @@
     <p class="subjudul">Silahkan Masukkan Data Donasi</p>
     <br>
     <table border="1" align="center">
-        <form action="terima-form.php" method="post" enctype="multipart/form-data">
+        <form></form>
+        <form action="proses-form.php" method="post" enctype="multipart/form-data">
             <tbody>
                 <tr>
                     <td>Nama Donasi :</td>
