@@ -1,0 +1,46 @@
+.navbar-custom {
+    background-color: #003366; 
+}
+.btn-login {
+    background-color: #FFD966; /* Warna kuning */
+    color: black;
+}
+.btn-signup {
+    background-color: #6495ED; /* Warna biru muda */
+    color: white;
+}
+
+.hero {
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-dark {
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.about-img{
+    width: 748px;
+    height: 547px;
+}
+
+.open-donations{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #036;
+    font-family: 'DM Sans';
+}
+
