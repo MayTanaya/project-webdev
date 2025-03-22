@@ -284,58 +284,70 @@
 
 
   <!-- Start Footer -->
-  <footer class="footer border-top py-5 my-5">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
-      <div class="col mb-3">
+  <div class="b-example-divider"></div>
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <!-- Logo dan Deskripsi -->
+      <div class="col-md-5 mb-3">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="images/image.png" class="me-2" alt="Logo" width="175" height="105">
+          <img src="images/image.png" class="me-2" alt="Logo" width="300" height="190">
         </a>
-        <p class="text-body-secondary">&copy; 2024</p>
+        <p class="text-body-secondary">
+          MyDonate adalah platform galang dana yang membantu Anda mengumpulkan dana untuk berbagai keperluan, mulai dari bantuan medis, pendidikan, hingga proyek sosial. Kami berkomitmen untuk memberikan transparansi dan kemudahan dalam setiap donasi yang dilakukan.
+        </p>
       </div>
 
-      <div class="col mb-3"></div> <!-- Kosong untuk spacing -->
-
-      <!-- Menu Navigasi Footer -->
-      <div class="col mb-3">
-        <h5>Section</h5>
+      <!-- Section 1: Navigasi -->
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Navigasi</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">About</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Donate</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to Donate</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Documentation</a></li>
         </ul>
       </div>
 
-      <div class="col mb-3">
-        <h5>Section</h5>
+      <!-- Section 2: Kontak -->
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Kontak</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">About</a></li>
+          <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Alamat: Jl. Contoh No. 123, Kota Contoh</span></li>
+          <li class="nav-item mb-2"><a href="https://wa.me/6281234567890" class="nav-link p-0 text-body-secondary" target="_blank">WhatsApp: +62 812-3456-7890</a></li>
         </ul>
       </div>
 
-      <div class="col mb-3">
-        <h5>Section</h5>
+      <!-- Section 3: Media Sosial -->
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Media Sosial</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">About</a></li>
+          <li class="nav-item mb-2">
+            <a class="link-body-emphasis" href="https://www.instagram.com/pamungcasse/" target="_blank">
+              <img src="images/ig.png" width="24" height="24" alt="Instagram"> Instagram
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank">
+              <img src="images/fb.png" width="24" height="24" alt="Facebook"> Facebook
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="link-body-emphasis" href="https://twitter.com/" target="_blank">
+              <img src="images/twitter.png" width="24" height="24" alt="Twitter"> Twitter
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-  </div>
-</footer>
 
-<!-- End Footer -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Hak Cipta -->
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; MyDonate Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
