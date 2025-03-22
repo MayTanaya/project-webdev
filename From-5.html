@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mydonate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="heading-container">
+    <section class="body-container">
+      <h5 class="judul">Form Donasi</h5>
+      <p class="subjudul">Silahkan Isi Data Donasi Anda</p>
+      <hr>
+      <form action="#" method="post">
+        <div class="input-box">
+          <label for="name" class="form-label">Judul Donasi</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Masukkan Nama Donasi"
+          />
+        </div>
+        <div class="input-box">
+          <label for="description" class="form-label">Deskripsi Donasi</label>
+          <input
+            type="text"
+            name="description"
+            class="form-control"
+            placeholder="Masukkan Deskripsi Donasi"
+          />
+        </div>
+        <div class="input-box">
+          <label for="picture" class="form-label">Tampilan Donasi</label>
+          <input type="file" name="picture" class="form-control" />
+        </div>
+        <div class="input-box">
+          <label for="date" class="form-label">Tanggal Peluncuran Donasi</label>
+          <input type="date" name="date" class="form-control" />
+        </div>
+        <div class="input-box">
+          <label for="types" class="form-label">Jenis Donasi</label>
+          <div style="display: flex; align-items: center;">
+            <input
+            type="radio"
+            name="types"
+            class="input-radio-money"
+            value="uang"
+            id="uang"
+            checked
+          /> <label for="uang" class="kindof">Uang</label>
+          </div>
+          <div style="display: flex; align-items: center;">
+          <input type="radio" name="types" class="input-radio-stuff" value="barang" id="barang"/> <label for="barang" class="kindof">Barang</label>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="target" class="form-label">Target Donasi</label>
+          <input type="checkbox" name="target" class="input-checkbox-1" /><label class="domestic">Dalam
+          Negeri</label>
+          <input type="checkbox" name="target" class="input-checkbox-2" /> <label class="international">Luar
+          Negeri</label>
+        </div>
+        <div class="input-box">
+          <label for="category" class="form-label">Jumlah Nominal</label>
+          <select name="category" class="form-control">
+            <option value="tingkat pertama">1.000.000-5.000.000</option>
+            <option value="tingkat kedua">5.000.000-10.000.000</option>
+            <option value="tingkat ketiga">10.000.000-20.000.000</option>
+          </select>
+        </div>
+        <div>
+          <input type="hidden" name="status" value="sukses" />
+          <button type="submit" class="button" name="submit">Submit</button>
+          <button type="reset" class="button" name="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    </div>
+  </body>
+</html>
