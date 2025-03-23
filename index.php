@@ -9,23 +9,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="index-style.css">
-
 </head>
 
 <body>
+
   <!-- Start navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
       <!-- Logo -->
       <a href="/" class="navbar-brand d-flex align-items-center">
-        <img src="images/logo-navbar.png" alt="Logo" width="150">
+        <img src="images/logo-navbar.png" alt="Logo" width="150" height="auto">
       </a>
-
       <!-- Toggle Button (Mobile) -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
@@ -48,7 +46,7 @@
 
         <!-- Login & Sign Up -->
         <form class="d-flex">
-          <button class="btn btn-login me-2" type="button" href="form-rev.html">Login</button>
+          <a class="btn btn-login me-2" href="pages/user/form-rev.html">Login</a>
           <button class="btn btn-signup" type="button">Sign Up</button>
         </form>
       </div>
@@ -56,22 +54,24 @@
   </nav>
   <!-- End Navbar -->
 
-  <!-- Hero Section -->
-  <div class="container-fluid hero d-flex align-items-center justify-content-center text-center">
-    <div class="formcontainer">
-      <div class="row d-flex justify-content-center text-center">
-        <!-- text -->
-        <div>
+
+  <!-- Start Hero Section -->
+  <div class="container-fluid hero position-relative text-center">
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="assets/videos/videohero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="formcontainer position-absolute top-50 start-50 translate-middle text-white">
       <h1 class="hero-title">
-            Happiness comes from <br> your action
+        Happiness comes from <br> your action
       </h1>
-          <!-- button -->
       <a class="btn btn-dark px-5 py-3 fw-bold mt-4" href="#open-donations">Donate Now</a>
     </div>
   </div>
-    </div>
-  </div>
+
   <!-- End hero section -->
+
 
   <!-- Start About Us -->
   <section id="about-us" class="pb-5">
@@ -79,7 +79,7 @@
       <div class="col-12 p-4">
         <h2 class="display-4 text-center fw-bold mt-4">Our Mission</h2>
       </div>
-
+      <!-- Isi -->
       <div class="row">
         <div class="col-12 col-md-6 text-justify">
 
@@ -103,7 +103,7 @@
   </section>
   <!-- End About Us -->
 
-  <!-- Start Open Donations -->
+
   <!-- Start Open Donations -->
   <section id="open-donations" class="pb-5">
     <div class="container">
@@ -111,17 +111,18 @@
         <h2 class="display-4 text-center fw-bold mt-4">Open Donations</h2>
       </div>
       <!-- Search Bar-->
-      <div class="container">
+
+      <div class="container mt-4">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-6">
-            <div class="form">
-              <i class="fa fa-search"></i>
-              <input type="text" class="form-control form-input" placeholder="search...">
-              <span class="left-pan"><i class="fa fa-microphone"></i></span>
+            <div class="form position-relative">
+              <i class="fa fa-search search-icon"></i>
+              <input type="text" class="form-control form-input" placeholder="Search...">
             </div>
           </div>
         </div>
       </div>
+
 
       <?php
       // Fungsi untuk mendapatkan tanggal saat ini dalam format tertentu
@@ -191,6 +192,7 @@
   </section>
   <!-- End Open Donations -->
 
+
   <!-- Toggle Deskripsi -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -219,11 +221,13 @@
   </script>
   <!-- End Open Donations -->
 
+
   <!-- Start How To Donate -->
   <div class="container-fluid p-0">
-    <img src="images/coba56.jpg" class="img-fluid w-100" alt="How To Donate">
+    <a id="how-to-donate">
+      <img src="images/coba56.jpg" class="img-fluid w-100" alt="How To Donate">
+    </a>
   </div>
-
   <!-- End How To Donate -->
 
 
@@ -301,58 +305,74 @@
 
 
   <!-- Start Footer -->
-  <footer class="footer border-top py-5 my-5">
+  <div class="b-example-divider"></div>
   <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="images/image.png" class="me-2" alt="Logo" width="175" height="105">
-        </a>
-        <p class="text-body-secondary">&copy; 2024</p>
+    <footer class="py-5">
+      <div class="row">
+        <!-- Logo dan Deskripsi -->
+        <div class="col-md-5 mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="images/logo-footer.png" class="me-2" alt="Logo" width="280" height="auto">
+          </a>
+          <p class="text-body-secondary">
+            MyDonate adalah platform galang dana yang membantu Anda mengumpulkan dana untuk berbagai keperluan, mulai dari bantuan medis, pendidikan, hingga proyek sosial. Kami berkomitmen untuk memberikan transparansi dan kemudahan dalam setiap donasi yang dilakukan.
+          </p>
+        </div>
+
+        <!-- Section 1: Navigasi -->
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Navigasi</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Donate</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to Donate</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Documentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Section 2: Kontak -->
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Kontak</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Alamat: Jl. Jend. Urip Sumoharjo No.116 Jebres, Kota Surakarta, Jawa Tengah 57129</span></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/6281234567890" class="nav-link p-0 text-body-secondary" target="_blank">WhatsApp: +62 812-3456-7890</a></li>
+          </ul>
+        </div>
+
+        <!-- Section 3: Media Sosial -->
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Media Sosial</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a class="link-body-emphasis" href="https://www.instagram.com/pamungcasse/" target="_blank">
+                <img src="images/ig.png" width="24" height="24" alt="Instagram"> Instagram
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank">
+                <a class="link-body-emphasis" href="https://www.instagram.com/pamungcasse/" target="_blank">
+                  <img src="images/fb.png" width="24" height="24" alt="Facebook"> Facebook
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="link-body-emphasis" href="https://twitter.com/" target="_blank">
+                <a class="link-body-emphasis" href="https://www.instagram.com/pamungcasse/" target="_blank">
+                  <img src="images/twitter.png" width="24" height="24" alt="Twitter"> Twitter
+                </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col mb-3"></div> <!-- Kosong untuk spacing -->
-
-      <!-- Menu Navigasi Footer -->
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">About</a></li>
-        </ul>
+      <!-- Hak Cipta -->
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; MyDonate Company, Inc. All rights reserved.</p>
       </div>
+    </footer>
+    <!-- End Footer -->
 
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="Subfont">About</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- End Footer -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
