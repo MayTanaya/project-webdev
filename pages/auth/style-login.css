@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(image/bg.png) no-repeat center center/cover;
+  background: url(latar.png) no-repeat center center/cover !important;
   display: flex;
   justify-content: center;
   align-items: center;
