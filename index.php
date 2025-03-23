@@ -329,12 +329,12 @@
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank">
+            <a class="link-body-emphasis" href="https://www.instagram.com/pamungcasse/" target="_blank">
               <img src="images/fb.png" width="24" height="24" alt="Facebook"> Facebook
             </a>
           </li>
           <li class="nav-item mb-2">
-            <a class="link-body-emphasis" href="https://twitter.com/" target="_blank">
+            <a class="link-body-emphasis" href="https://www.instagram.com/pamungcasse/" target="_blank">
               <img src="images/twitter.png" width="24" height="24" alt="Twitter"> Twitter
             </a>
           </li>
