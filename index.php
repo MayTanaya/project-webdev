@@ -110,18 +110,18 @@
       <div class="col-12 p-4">
         <h2 class="display-4 text-center fw-bold mt-4">Open Donations</h2>
       </div>
-      <!-- Search Bar-->
 
+      <!-- Search Bar-->
       <div class="container mt-4">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-md-6">
-            <div class="form position-relative">
-              <i class="fa fa-search search-icon"></i>
-              <input type="text" class="form-control form-input" placeholder="Search...">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6">
+            <div class="position-relative">
+                <input type="text" class="form-control ps-5" placeholder="Search...">
+                <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
 
       <?php
@@ -232,76 +232,136 @@
 
 
   <!-- Start Updates -->
-  <section id="documentation" class="pb-5">
+  <section id="updates" class="pb-5">
     <div class="container">
-      <div class="col-12 p-4">
-        <h2 class="display-4 text-center fw-bold mt-4">Documentation</h2>
-      </div>
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/banjirSemarang.jpeg" alt="Banjir Semarang" width="100%" height="200%">
-            <div class="card-body">
-              <p class="card-text">Donasi telah tersalurkan untuk bencana banjir di kota Semarang pada 17 Maret 2022.
-                Donasi yang terkumpul berupa uang sejumlah 8.450.000. Terima Kasih atas bantuan yang telah anda diberikan
-                untuk korban bencana ini.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-body-secondary"> 18 Maret 2022</small> <!-- Tgl Upload update ke web -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/BanjirBantul.jpeg" alt="Banjir Bantul" width="100%" height="200%">
-            <div class="card-body">
-              <p class="card-text">Pada 15 Desember 2022, tim kami telah menyalurkan donasi berupa bahan makanan pokok
-                serta uang tunai sejumlah 3.450.000 kepada warga terdampak bencana banji di Bantul, Yogyakarta.
-                Bantuan ini diharapkan dapat meringankan beban mereka dalam menghadapi situasi sulit.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-body-secondary">17 Desember 2022</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/tanah-longsor.jpg" alt="Tanah Longsor" width="100%" height="200%">
-            <div class="card-body">
-              <p class="card-text">Dengan penuh rasa syukur, kami sampaikan bahwa donasi yang telah terkumpul telah
-                berhasil disalurkan kepada para korban bencana tanah longsor di Batam pada 16 Juni 2023. Bantuan
-                tersebut diharapkan dapat meringankan beban mereka dan membantu proses pemulihan di tengah situasi
-                yang sulit ini. Terima kasih atas kepedulian dan dukungan Anda.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-body-secondary">19 Juni 2023</small>
-              </div>
-            </div>
-          </div>
+        <div class="col-12 p-4">
+            <h2 class="display-4 text-center fw-bold mt-4">Documentation</h2>
         </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/gempa.jpg" alt="Gempa" width="100%" height="200%">
-            <div class="card-body">
-              <p class="card-text">Kami beritahukan pada 18 Desember 2023, donasi yang telah dihimpun telah disalurkan
-                sepenuhnya kepada warga terdampak gempa di Cianjur. Semoga bantuan tersebut dapat membantu meringankan
-                kesulitan mereka dan mendukung pemulihan kehidupan sehari-hari. Kami ucapkan terima kasih atas dukungan
-                dan kontribusi yang telah diberikan.</p>
-              <div class="d-flex justify-content-between align-items-center">
-              </div>
-              <small class="text-body-secondary">20 Desember 2023</small>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/banjirSemarang.jpeg" alt="Banjir Semarang" class="card-img-top fixed-size-img">
+                    <div class="card-body">
+                        <p class="card-text short-text">Donasi telah tersalurkan untuk bencana banjir di kota Semarang pada 17 Maret 2022. Donasi yang terkumpul berupa uang sejumlah 8.450.000. Terima Kasih atas bantuan yang telah anda diberikan untuk korban bencana ini.</p>
+                        <p class="card-text full-text" style="display: none;">Donasi telah tersalurkan untuk bencana banjir di kota Semarang pada 17 Maret 2022. Donasi yang terkumpul berupa uang sejumlah 8.450.000. Terima Kasih atas bantuan yang telah anda diberikan untuk korban bencana ini. <strong>Informasi tambahan:</strong> Bantuan ini disalurkan melalui posko bencana setempat.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
+                            <small class="text-body-secondary">18 Maret 2022</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/BanjirBantul.jpeg" alt="Banjir Bantul" class="card-img-top fixed-size-img">
+                    <div class="card-body">
+                        <p class="card-text short-text">Pada 15 Desember 2022, tim kami telah menyalurkan donasi berupa bahan makanan pokok serta uang tunai sejumlah 3.450.000 kepada warga terdampak bencana banjir di Bantul, Yogyakarta. Bantuan ini diharapkan dapat meringankan beban mereka dalam menghadapi situasi sulit.</p>
+                        <p class="card-text full-text" style="display: none;">Pada 15 Desember 2022, tim kami telah menyalurkan donasi berupa bahan makanan pokok serta uang tunai sejumlah 3.450.000 kepada warga terdampak bencana banjir di Bantul, Yogyakarta. Bantuan ini diharapkan dapat meringankan beban mereka dalam menghadapi situasi sulit. <strong>Informasi tambahan:</strong> Donasi disalurkan melalui relawan setempat.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
+                            <small class="text-body-secondary">17 Desember 2022</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/tanah-longsor.jpg" alt="Banjir Bantul" class="card-img-top fixed-size-img">
+                    <div class="card-body">
+                        <p class="card-text short-text">Dengan penuh rasa syukur, kami sampaikan bahwa donasi yang telah terkumpul telah berhasil disalurkan kepada para korban bencana tanah longsor di Batam pada 16 Juni 2023.</p>
+                        <p class="card-text full-text" style="display: none;">Dengan penuh rasa syukur, kami sampaikan bahwa donasi yang telah terkumpul telah berhasil disalurkan kepada para korban bencana tanah longsor di Batam pada 16 Juni 2023. Bantuan tersebut diharapkan dapat meringankan beban mereka dan membantu proses pemulihan di tengah situasi yang sulit ini. Terima kasih atas kepedulian dan dukungan Anda.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
+                            <small class="text-body-secondary">19 Juni 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                <img src="images/gempa.jpg" alt="Gempa" class="card-img-top fixed-size-img">
+                <div class="card-body">
+                        <p class="card-text short-text">Kami beritahukan pada 18 Desember 2023, donasi yang telah dihimpun telah disalurkan sepenuhnya kepada warga terdampak gempa di Cianjur.</p>
+                        <p class="card-text full-text" style="display: none;">Kami beritahukan pada 18 Desember 2023, donasi yang telah dihimpun telah disalurkan sepenuhnya kepada warga terdampak gempa di Cianjur. Semoga bantuan tersebut dapat membantu meringankan kesulitan mereka dan mendukung pemulihan kehidupan sehari-hari. Kami ucapkan terima kasih atas dukungan dan kontribusi yang telah diberikan.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
+                            <small class="text-body-secondary">20 Desember 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-  </section>
+    </div>
+</section>
+
+<!-- CSS Internal -->
+<style>
+    .fixed-size-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn-outline-primary {
+        border-radius: 20px;
+    }
+
+    .full-text {
+        display: none; /* Teks lengkap disembunyikan secara default */
+    }
+</style>
+
+<!-- JavaScript Internal -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButtons = document.querySelectorAll(".toggle-text");
+
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault(); // Mencegah perilaku default link
+                const cardBody = this.closest(".card-body");
+                const shortText = cardBody.querySelector(".short-text");
+                const fullText = cardBody.querySelector(".full-text");
+
+                if (shortText.style.display === "none") {
+                    shortText.style.display = "-webkit-box"; // Tampilkan teks singkat
+                    fullText.style.display = "none"; // Sembunyikan teks lengkap
+                    this.textContent = "Baca Selengkapnya"; // Ubah teks tombol
+                } else {
+                    shortText.style.display = "none"; // Sembunyikan teks singkat
+                    fullText.style.display = "block"; // Tampilkan teks lengkap
+                    this.textContent = "Tampilkan Lebih Sedikit"; // Ubah teks tombol
+                }
+            });
+        });
+    });
+</script>
 
 
   <!-- Start Footer -->
@@ -336,7 +396,7 @@
           <h5>Kontak</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Alamat: Jl. Jend. Urip Sumoharjo No.116 Jebres, Kota Surakarta, Jawa Tengah 57129</span></li>
-            <li class="nav-item mb-2"><a href="https://wa.me/6281234567890" class="nav-link p-0 text-body-secondary" target="_blank">WhatsApp: +62 812-3456-7890</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/6285726053317" class="nav-link p-0 text-body-secondary" target="_blank">WhatsApp: +62 857-2605-3317</a></li>
           </ul>
         </div>
 
