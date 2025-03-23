@@ -46,8 +46,8 @@
 
         <!-- Login & Sign Up -->
         <form class="d-flex">
-          <a class="btn btn-login me-2" href="pages/user/form-rev.html">Login</a>
-          <button class="btn btn-signup" type="button">Sign Up</button>
+          <a class="btn btn-login me-2" href="pages/auth/Login.html">Login</a>
+          <a class="btn btn-signup" href="pages/auth/SignupUser.html">Sign Up</a>
         </form>
       </div>
     </div>
@@ -231,77 +231,103 @@
   <!-- End How To Donate -->
 
 
-  <!-- Start Updates -->
+  <!-- Start Documentation -->
   <section id="documentation" class="pb-5">
     <div class="container">
       <div class="col-12 p-4">
         <h2 class="display-4 text-center fw-bold mt-4">Documentation</h2>
       </div>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <!-- Card 1 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="images/banjirSemarang.jpeg" alt="Banjir Semarang" width="100%" height="200%">
+            <img src="images/banjirSemarang.jpeg" alt="Banjir Semarang" class="card-img-top fixed-size-img">
             <div class="card-body">
-              <p class="card-text">Donasi telah tersalurkan untuk bencana banjir di kota Semarang pada 17 Maret 2022.
-                Donasi yang terkumpul berupa uang sejumlah 8.450.000. Terima Kasih atas bantuan yang telah anda diberikan
-                untuk korban bencana ini.</p>
+              <p class="card-text short-text">Donasi telah tersalurkan untuk bencana banjir di kota Semarang pada 17 Maret 2022. Donasi yang terkumpul berupa uang sejumlah 8.450.000. Terima Kasih atas bantuan yang telah anda diberikan untuk korban bencana ini.</p>
+              <p class="card-text full-text" style="display: none;">Donasi telah tersalurkan untuk bencana banjir di kota Semarang pada 17 Maret 2022. Donasi yang terkumpul berupa uang sejumlah 8.450.000. Terima Kasih atas bantuan yang telah anda diberikan untuk korban bencana ini. <strong>Informasi tambahan:</strong> Bantuan ini disalurkan melalui posko bencana setempat.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-body-secondary"> 18 Maret 2022</small> <!-- Tgl Upload update ke web -->
+                <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
+                <small class="text-body-secondary">18 Maret 2022</small>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="images/BanjirBantul.jpeg" alt="Banjir Bantul" width="100%" height="200%">
+            <img src="images/BanjirBantul.jpeg" alt="Banjir Bantul" class="card-img-top fixed-size-img">
             <div class="card-body">
-              <p class="card-text">Pada 15 Desember 2022, tim kami telah menyalurkan donasi berupa bahan makanan pokok
-                serta uang tunai sejumlah 3.450.000 kepada warga terdampak bencana banji di Bantul, Yogyakarta.
-                Bantuan ini diharapkan dapat meringankan beban mereka dalam menghadapi situasi sulit.</p>
+              <p class="card-text short-text">Pada 15 Desember 2022, tim kami telah menyalurkan donasi berupa bahan makanan pokok serta uang tunai sejumlah 3.450.000 kepada warga terdampak bencana banjir di Bantul, Yogyakarta. Bantuan ini diharapkan dapat meringankan beban mereka dalam menghadapi situasi sulit.</p>
+              <p class="card-text full-text" style="display: none;">Pada 15 Desember 2022, tim kami telah menyalurkan donasi berupa bahan makanan pokok serta uang tunai sejumlah 3.450.000 kepada warga terdampak bencana banjir di Bantul, Yogyakarta. Bantuan ini diharapkan dapat meringankan beban mereka dalam menghadapi situasi sulit. <strong>Informasi tambahan:</strong> Donasi disalurkan melalui relawan setempat.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
+                <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
                 <small class="text-body-secondary">17 Desember 2022</small>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Card 3 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="images/tanah-longsor.jpg" alt="Tanah Longsor" width="100%" height="200%">
+            <img src="images/tanah-longsor.jpg" alt="Banjir Bantul" class="card-img-top fixed-size-img">
             <div class="card-body">
-              <p class="card-text">Dengan penuh rasa syukur, kami sampaikan bahwa donasi yang telah terkumpul telah
-                berhasil disalurkan kepada para korban bencana tanah longsor di Batam pada 16 Juni 2023. Bantuan
-                tersebut diharapkan dapat meringankan beban mereka dan membantu proses pemulihan di tengah situasi
-                yang sulit ini. Terima kasih atas kepedulian dan dukungan Anda.</p>
+              <p class="card-text short-text">Dengan penuh rasa syukur, kami sampaikan bahwa donasi yang telah terkumpul telah berhasil disalurkan kepada para korban bencana tanah longsor di Batam pada 16 Juni 2023.</p>
+              <p class="card-text full-text" style="display: none;">Dengan penuh rasa syukur, kami sampaikan bahwa donasi yang telah terkumpul telah berhasil disalurkan kepada para korban bencana tanah longsor di Batam pada 16 Juni 2023. Bantuan tersebut diharapkan dapat meringankan beban mereka dan membantu proses pemulihan di tengah situasi yang sulit ini. Terima kasih atas kepedulian dan dukungan Anda.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
+                <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
                 <small class="text-body-secondary">19 Juni 2023</small>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Card 4 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="images/gempa.jpg" alt="Gempa" width="100%" height="200%">
+            <img src="images/gempa.jpg" alt="Gempa" class="card-img-top fixed-size-img">
             <div class="card-body">
-              <p class="card-text">Kami beritahukan pada 18 Desember 2023, donasi yang telah dihimpun telah disalurkan
-                sepenuhnya kepada warga terdampak gempa di Cianjur. Semoga bantuan tersebut dapat membantu meringankan
-                kesulitan mereka dan mendukung pemulihan kehidupan sehari-hari. Kami ucapkan terima kasih atas dukungan
-                dan kontribusi yang telah diberikan.</p>
+              <p class="card-text short-text">Kami beritahukan pada 18 Desember 2023, donasi yang telah dihimpun telah disalurkan sepenuhnya kepada warga terdampak gempa di Cianjur.</p>
+              <p class="card-text full-text" style="display: none;">Kami beritahukan pada 18 Desember 2023, donasi yang telah dihimpun telah disalurkan sepenuhnya kepada warga terdampak gempa di Cianjur. Semoga bantuan tersebut dapat membantu meringankan kesulitan mereka dan mendukung pemulihan kehidupan sehari-hari. Kami ucapkan terima kasih atas dukungan dan kontribusi yang telah diberikan.</p>
               <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-outline-primary toggle-text">Baca Selengkapnya</a>
+                <small class="text-body-secondary">20 Desember 2023</small>
               </div>
-              <small class="text-body-secondary">20 Desember 2023</small>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
+
+  <!-- JavaScript Internal -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggleButtons = document.querySelectorAll(".toggle-text");
+
+      toggleButtons.forEach(button => {
+        button.addEventListener("click", function(e) {
+          e.preventDefault(); // Mencegah perilaku default link
+          const cardBody = this.closest(".card-body");
+          const shortText = cardBody.querySelector(".short-text");
+          const fullText = cardBody.querySelector(".full-text");
+
+          if (shortText.style.display === "none") {
+            shortText.style.display = "-webkit-box"; // Tampilkan teks singkat
+            fullText.style.display = "none"; // Sembunyikan teks lengkap
+            this.textContent = "Baca Selengkapnya"; // Ubah teks tombol
+          } else {
+            shortText.style.display = "none"; // Sembunyikan teks singkat
+            fullText.style.display = "block"; // Tampilkan teks lengkap
+            this.textContent = "Tampilkan Lebih Sedikit"; // Ubah teks tombol
+          }
+        });
+      });
+    });
+  </script>
+
 
 
   <!-- Start Footer -->
@@ -324,10 +350,10 @@
           <h5>Navigasi</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Donate</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to Donate</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Documentation</a></li>
+            <li class="nav-item mb-2"><a href="#about-us" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#open-donations" class="nav-link p-0 text-body-secondary">Donate</a></li>
+            <li class="nav-item mb-2"><a href="#how-to-donate" class="nav-link p-0 text-body-secondary">How to Donate</a></li>
+            <li class="nav-item mb-2"><a href="#documentation" class="nav-link p-0 text-body-secondary">Documentation</a></li>
           </ul>
         </div>
 
