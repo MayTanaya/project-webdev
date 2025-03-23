@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(image/bg.png) no-repeat center center/cover;
+    background: url(latar.png) no-repeat center center/cover !important;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -80,6 +80,16 @@ body{
     color: black;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.active-1 {
+    text-decoration: none;
+    color: aqua;
+}
+
+.active-2 {
+    text-decoration: none;
+    color: aqua;
 }
 
 .button {
