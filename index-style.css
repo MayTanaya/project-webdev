@@ -1,57 +1,95 @@
-.navbar-custom {
-    background-color: #003366; 
+body {
+    font-family: 'DM Sans', sans-serif;
 }
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #003366;
+}
+
 .btn-login {
     background-color: #FFD966; /* Warna kuning */
     color: black;
 }
+
 .btn-signup {
     background-color: #6495ED; /* Warna biru muda */
     color: white;
 }
 
+/* Hero Section */
 .hero {
-    background-color: #003366;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  height: 100vh; /* Full screen */
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Menghindari gap dan memastikan video menyesuaikan */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.5); /* Efek lebih gelap dengan nuansa kebiruan */
+}
+
+.formcontainer {
+  z-index: 2;
 }
 
 .hero-title {
-    font-size: 4rem;
-    font-weight: bold;
-    color: white;
-    font-family: 'DM Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
+.form-input {
+  flex: 1;
+  padding-left: 40px; /* Beri ruang untuk ikon search */
+  padding-right: 40px; /* Beri ruang untuk ikon microphone */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.mic-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Tombol */
 .btn-dark {
     color: white;
     border-radius: 8px;
     font-size: 1.2rem;
+
+    
+    padding: 12px 30px;
 }
 
-.about-img{
-    width: 748px;
-    height: 547px;
-}
 
-.open-donations{
-    font-size: 4rem;
-    font-weight: bold;
-    color: #036;
-    font-family: 'DM Sans';
-}
-
-.about-us .container {
-    max-width: 1200px;
-
-}
-
-.Subfont{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #036;
-    font-family: 'DM Sans';
-}
